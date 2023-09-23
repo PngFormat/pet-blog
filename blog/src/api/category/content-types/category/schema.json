@@ -22,11 +22,11 @@
     "Link": {
       "type": "string"
     },
-    "post": {
+    "posts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::post.post",
-      "inversedBy": "category"
+      "mappedBy": "category"
     }
   }
 }

@@ -38,9 +38,9 @@
     },
     "category": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "mappedBy": "post"
+      "inversedBy": "posts"
     }
   }
 }
